@@ -5,5 +5,8 @@ This repository contains a patch, a configuration file and instructions to build
 The eapol_test.config file replaces the .config file in the wpa_supplicant directory. It is built using an internal TLS implementation and will require [libtommath](https://github.com/libtom/libtommath).
 
 Build instructions can be found here: 
+  https://wiki.geant.org/display/H2eduroam/Testing+with+eapol_test
 
-https://wiki.geant.org/display/H2eduroam/Testing+with+eapol_test
+A binary download (unsigned at the moment) can be found here:
+  https://www.dropbox.com/s/9nmw4r7b5jr263d/eapol_test.exe?dl=1
+  
