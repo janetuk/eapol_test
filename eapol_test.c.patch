@@ -1,0 +1,26 @@
+From 3bd16507e508fadd8987e38f72889a10fa7c2c4b Mon Sep 17 00:00:00 2001
+From: Stefan Paetow <stefan.paetow@jisc.ac.uk>
+Date: Tue, 9 Mar 2021 00:01:05 +0000
+Subject: [PATCH] Add the address family when manually constructing IPv4
+ addresses in eapol_test on Windows. Otherwise other functions fail miserably.
+ Signed-off-by: Stefan Paetow <stefan.paetow@jisc.ac.uk>
+
+---
+ wpa_supplicant/eapol_test.c | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/wpa_supplicant/eapol_test.c b/wpa_supplicant/eapol_test.c
+index 9f69736..d137ad6 100644
+--- a/wpa_supplicant/eapol_test.c
++++ b/wpa_supplicant/eapol_test.c
+@@ -1025,6 +1025,7 @@ static void wpa_init_conf(struct eapol_test_data *e,
+ 		*pos++ = a[1];
+ 		*pos++ = a[2];
+ 		*pos++ = a[3];
++		as->addr.af = AF_INET;
+ 	}
+ #else /* CONFIG_NATIVE_WINDOWS or CONFIG_ANSI_C_EXTRA */
+ 	if (hostapd_parse_ip_addr(authsrv, &as->addr) < 0) {
+-- 
+2.2.1
+
