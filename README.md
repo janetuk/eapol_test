@@ -1,4 +1,4 @@
-# eapol_test
+# eapol_test (on Windows)
 
 This repository contains a patch, a configuration file and instructions to build eapol_test on Linux for Windows. The patch may eventually disappear once [@jmalinen](https://w1.fi/) accepts it into the wpa_supplicant codebase.
 
@@ -9,4 +9,3 @@ Build instructions can be found here:
 
 A binary download (unsigned at the moment) can be found here:
   https://www.dropbox.com/s/9nmw4r7b5jr263d/eapol_test.exe?dl=1
-  
