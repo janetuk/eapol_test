@@ -7,5 +7,5 @@ The eapol_test.config file replaces the .config file in the wpa_supplicant direc
 Build instructions can be found here: 
   https://wiki.geant.org/display/H2eduroam/Testing+with+eapol_test
 
-A binary download (signed by Jisc) can be found here:
+A binary download (signed by Jisc) can be found under the releases or here:
   https://www.dropbox.com/s/9nmw4r7b5jr263d/eapol_test.exe?dl=1
