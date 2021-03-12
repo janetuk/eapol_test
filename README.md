@@ -1,6 +1,6 @@
 # eapol_test (on Windows)
 
-This repository contains a patch, a configuration file and instructions to build eapol_test on Linux for Windows. The patch may eventually disappear once [@jmalinen](https://w1.fi/) accepts it into the wpa_supplicant codebase.
+This repository contains a patch and a C source file, a configuration file and instructions to build eapol_test on Linux for Windows. The patch and C file are only needed for the wpa_supplicant v2.9 or earlier codebase.
 
 The eapol_test.config file replaces the .config file in the wpa_supplicant directory. It is built using an internal TLS implementation and will require [libtommath](https://github.com/libtom/libtommath).
 
